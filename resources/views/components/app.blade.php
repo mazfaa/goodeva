@@ -93,7 +93,7 @@
                         use App\Models\Employee;
                         use App\Models\Attendance;
                         if (auth()->user()->permission_id != 1) {
-                            $employee = Employee::where('user_id', auth()->user()->id)->first()->id;
+                            $employee = Employee::where('user_id', auth()->user()->id)->first()->id ?? '';
                             $today_attendance_id = Attendance::where('employee_id', $employee)->where('date', date('Y-m-d'))->first()->id ?? '';
                         }
                 @endphp
