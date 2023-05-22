@@ -63,12 +63,9 @@
                       </button>
                     </td>
                     <td>
-                      @if (isset($attendance->clock_out))
                         <button type="button" class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#attendance-clockout-modal-{{ $attendance->id }}">
                           <i class="bi bi-camera"></i> {{ $attendance->clock_out }}
                         </button>
-                      @else -
-                      @endif
                     </td>
                     <td>
                       <span class="badge {{ ($attendance->reason == 'Sick' ? 'bg-success' : ($attendance->reason == 'Permit' ? 'bg-warning' : 'bg-danger')) }}">

@@ -173,7 +173,7 @@ class AttendanceController extends Controller
         if($result) {
             Alert::success('Success!', 'Your Attendance was Successful!');
             return response()
-                ->view('attendance.index', compact('attendances'))
+                ->view('index')
                 ->header('Cache-control', 'no cache, no store, must-revalidate');
         } else {
             echo die('Could not save image! check file permission.');
