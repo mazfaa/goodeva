@@ -3,7 +3,7 @@ owner :
 	password : admin
 
 employee : 
-	email: kangazfa@gmail.com
+	email: kangazfa@goodeva.co.id
 	password : password
 
 import file regencies.csv pada tabel cities
